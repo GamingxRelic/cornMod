@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "cornmod",
+  "version": "${version}",
+
+  "name": "Corn Mod",
+  "description": "This mod adds corn! Grow corn, cook corn, eat corn, pop corn!",
+  "authors": [
+    "Relic"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/cornmod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.relic.cornmod.CornMod"
+    ],
+    "client": [
+      "com.relic.cornmod.CropsClient"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

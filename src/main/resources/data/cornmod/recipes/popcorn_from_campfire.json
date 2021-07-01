@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "cornmod:corn_seeds"
+  },
+  "result": "cornmod:popcorn",
+  "experience": 0.35,
+  "cookingtime": 100
+}

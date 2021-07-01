@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "SCB",
+        " N "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:carrot"
+        },
+        "S": {
+            "item": "cornmod:roasted_corn"
+        },
+        "C": {
+            "item": "minecraft:cooked_beef"
+        },
+        "B": {
+            "item": "minecraft:baked_potato"
+        },
+        "N": {
+            "item": "minecraft:bowl"
+        }
+    },
+    "result": {
+            "item": "cornmod:corned_beef",
+            "count": 1
+        }
+}

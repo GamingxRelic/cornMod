@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cornmod:popcorn"
+    },
+    {
+      "item": "cornmod:popcorn"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "item": "cornmod:bag_of_popcorn",
+    "count": 1
+  }
+}
