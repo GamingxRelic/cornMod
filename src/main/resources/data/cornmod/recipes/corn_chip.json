@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "#D#",
+        "   "
+    ],
+    "key": {
+        "#": {
+            "item": "cornmod:corn_flour"
+        },
+        "D": {
+            "item": "cornmod:corn_dough"
+        }
+    },
+    "result": {
+        "item": "cornmod:corn_chip",
+        "count": 8
+    }
+}

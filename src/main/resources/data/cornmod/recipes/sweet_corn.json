@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "C",
+        "B"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:sugar"
+        },
+        "C": {
+            "item": "cornmod:roasted_corn"
+        },
+        "B": {
+            "item": "minecraft:bowl"
+        }
+    },
+    "result": {
+        "item": "cornmod:sweet_corn",
+        "count": 1
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#S#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "cornmod:corn_seeds"
+        },
+        "S": {
+            "item": "cornmod:seed_crusher"
+        }
+    },
+    "result": {
+        "item": "cornmod:corn_flour",
+        "count": 2
+    }
+}

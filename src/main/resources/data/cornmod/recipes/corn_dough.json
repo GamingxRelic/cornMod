@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "cornmod:corn_flour"
+        },
+        {
+            "item": "minecraft:water_bucket"
+        },
+        {
+            "item": "cornmod:corn_flour"
+        }
+    ],
+    "result": {
+        "item": "cornmod:corn_dough",
+        "count": 2
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  /",
+        "CI ",
+        "i  "
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "W": {
+            "item": "cornmod:corn_seeds"
+        },
+        "I": {
+            "item": "minecraft:iron_nugget"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "cornmod:seed_crusher",
+        "count": 1
+    }
+}

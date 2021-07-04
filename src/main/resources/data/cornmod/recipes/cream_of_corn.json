@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "SGM",
+        " B "
+    ],
+    "key": {
+        "#": {
+            "item": "cornmod:corn_flour"
+        },
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "G": {
+            "item": "cornmod:corn"
+        },
+        "M": {
+            "item": "minecraft:milk_bucket"
+        },
+        "B": {
+            "item": "minecraft:bowl"
+        }
+    },
+    "result": {
+        "item": "cornmod:cream_of_corn",
+        "count": 1
+    }
+}

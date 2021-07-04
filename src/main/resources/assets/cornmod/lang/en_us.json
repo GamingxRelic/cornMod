@@ -6,6 +6,11 @@
   "item.cornmod.popcorn": "Popcorn",
   "item.cornmod.bag_of_popcorn": "Bag of Popcorn",
   "item.cornmod.corned_beef": "Corned Beef Meal",
-  "item.cornmod.test_seeds": "Test Seeds",
-  "item.cornmod.test_seeds.line1": "Test Seeds for Test Crop"
+  "item.cornmod.sweet_corn": "Sweet Corn",
+  "item.cornmod.cream_of_corn": "Cream of Corn",
+  "item.cornmod.corn_chip": "Corn Chip",
+  "item.cornmod.corn_flour": "Corn Flour",
+  "item.cornmod.corn_dough": "Corn Dough",
+  "item.cornmod.corn_bread": "Corn Bread",
+  "item.cornmod.seed_crusher": "Seed Crusher"
 }

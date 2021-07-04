@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "cornmod:corn_dough"
+  },
+  "result": "cornmod:corn_bread",
+  "experience": 0.35,
+  "cookingtime": 50
+}
