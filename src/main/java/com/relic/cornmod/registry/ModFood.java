@@ -15,17 +15,12 @@ public class ModFood {
 
 
     public static final FoodComponent SWEET_CORN = (new FoodComponent.Builder()).hunger(5).saturationModifier(.4f).statusEffect(
-            new StatusEffectInstance(StatusEffects.SPEED, 100, 0),
-            1.00f // 100% chance of happening. The duration is in ticks.
-    ).build();
+            new StatusEffectInstance(StatusEffects.SPEED, 100, 0), 1.00f // 100% chance of happening. The duration is in ticks.
+            ).build();
 
     public static final FoodComponent CREAM_OF_CORN = (new FoodComponent.Builder()).hunger(5).saturationModifier(.4f).statusEffect(
-            new StatusEffectInstance(StatusEffects.ABSORPTION, 60, 1),
-            1.00f // 100% chance of happening. The duration is in ticks.
-    ).build();
+            new StatusEffectInstance(StatusEffects.ABSORPTION, 60, 1), 1.00f).build();
 
     public static final FoodComponent CORNED_BEEF = (new FoodComponent.Builder()).hunger(10).saturationModifier(.8f).meat().statusEffect(
-                    new StatusEffectInstance(StatusEffects.REGENERATION, 60, 0),
-                    1.00f // 100% chance of happening. The duration is in ticks.
-            ).build();
+                    new StatusEffectInstance(StatusEffects.REGENERATION, 60, 0), 1.00f).build();
 }

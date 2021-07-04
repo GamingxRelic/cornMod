@@ -1,19 +1,18 @@
 package com.relic.cornmod.blocks;
 
+import com.relic.cornmod.registry.ModItems;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.DoubleBlockHalf;
-import net.minecraft.server.world.ServerWorld;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
 
-import java.util.Random;
+import javax.swing.text.html.BlockView;
 
-public class CornCrop extends TallPlantBlock implements Fertilizable {
+public class CornCrop extends TallPlantBlock{
 
     public static final IntProperty AGE = Properties.AGE_7;
     public static final EnumProperty<DoubleBlockHalf> HALF = Properties.DOUBLE_BLOCK_HALF;
@@ -47,18 +46,16 @@ public class CornCrop extends TallPlantBlock implements Fertilizable {
         super(settings);
     }
 
-    @Override
-    public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean isClient) {
-        return false;
+    public ItemConvertible getSeedsItem() {
+        return ModItems.CORN_SEEDS;
     }
 
-    @Override
-    public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
-        return false;
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        if (state.get(HALF).equals(DoubleBlockHalf.UPPER)) {
+            return TOP_AGE[state.get(AGE)];
+        } else {
+            return BOTTOM_AGES[state.get(AGE)];
+        }
     }
 
-    @Override
-    public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
-
-    }
 }
