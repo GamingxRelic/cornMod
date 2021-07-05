@@ -12,6 +12,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
+
+
     //Seeds
     public static final Item CORN_SEEDS = new AliasedBlockItem(ModBlocks.CORN_CROP, new FabricItemSettings().group(CornMod.ITEM_GROUP));
 
@@ -26,12 +28,13 @@ public class ModItems {
     public static final ItemSweetCorn SWEET_CORN = new ItemSweetCorn(new Item.Settings().group(CornMod.ITEM_GROUP).food(ModFood.SWEET_CORN).maxCount(1));
     public static final ItemCreamOfCorn CREAM_OF_CORN = new ItemCreamOfCorn(new Item.Settings().group(CornMod.ITEM_GROUP).food(ModFood.CREAM_OF_CORN).recipeRemainder(Items.BUCKET).maxCount(1));
 
+
     //Ingredients
     public static final ItemCornFlour CORN_FLOUR = new ItemCornFlour(new Item.Settings().group(CornMod.ITEM_GROUP).recipeRemainder(ModItems.SEED_CRUSHER));
     public static final ItemCornDough CORN_DOUGH = new ItemCornDough(new Item.Settings().group(CornMod.ITEM_GROUP).recipeRemainder(Items.BUCKET));
 
     //Crafting Tools (Seed Crusher)
-    public static final ItemSeedCrusher SEED_CRUSHER = new ItemSeedCrusher(new Item.Settings().group(CornMod.ITEM_GROUP).maxCount(1).maxDamage(64));
+    public static ItemSeedCrusher SEED_CRUSHER = new ItemSeedCrusher(new Item.Settings().group(CornMod.ITEM_GROUP).maxCount(1).maxDamage(64));
 
     public static void register() {
         //Seeds
