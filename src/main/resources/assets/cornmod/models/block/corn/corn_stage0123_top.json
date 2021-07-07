@@ -1,6 +1,6 @@
 {
   "parent": "cornmod:block/corn/crop_model_corn",
   "textures": {
-    "crop": "cornmod:block/corn_stage0_top"
+    "crop": "cornmod:block/corn_stage0123_top"
   }
 }

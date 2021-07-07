@@ -22,7 +22,7 @@
       "com.relic.cornmod.CornMod"
     ],
     "client": [
-      "com.relic.cornmod.CropsClient"
+      "com.relic.cornmod.CornModClient"
     ]
   },
   "mixins": [

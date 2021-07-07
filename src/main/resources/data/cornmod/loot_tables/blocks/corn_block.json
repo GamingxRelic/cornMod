@@ -3,7 +3,6 @@
   "pools": [
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -13,9 +12,10 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "cornmod:corn_crop",
+                  "block": "cornmod:corn_block",
                   "properties": {
-                    "age": "7"
+                    "age": "7",
+                    "half": "lower"
                   }
                 }
               ],
@@ -31,7 +31,36 @@
     },
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:binomial_with_bonus_count",
+              "parameters": {
+                "extra": 3,
+                "probability": 0.5714286
+              }
+            }
+          ],
+          "name": "cornmod:corn_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "cornmod:corn_block",
+          "properties": {
+            "age": "7",
+            "half": "lower"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -42,23 +71,20 @@
               "formula": "minecraft:binomial_with_bonus_count",
               "parameters": {
                 "extra": 2,
-                "probability": 0.3
+                "probability": 0.4714286
               }
             }
           ],
-          "name": "cornmod:corn_seeds"
-        },
-        {
-          "type": "minecraft:item",
           "name": "cornmod:corn"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "cornmod:corn_crop",
+          "block": "cornmod:corn_block",
           "properties": {
-            "age": "7"
+            "age": "7",
+            "half": "lower"
           }
         }
       ]

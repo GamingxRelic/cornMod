@@ -12,6 +12,9 @@ public class CornMod implements ModInitializer {
     public static final String MOD_ID = "cornmod";
     public static ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "item_group"), () -> new ItemStack(ModItems.CORN));
 
+    public static Identifier id(String string) {
+        return new Identifier(MOD_ID, string);
+    }
 
     @Override
     public void onInitialize() {
